@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@theme {
+  --color-deep-purple: #280D8C;
+  --color-bright-purple: #3711BF;
+  --color-dark-purple: #180E59;
+  --color-navy: #070C26;
+  --color-coral: #F24B4B;
+  --color-white: #ffffff;
+  --color-black: #0C112B;
+  --color-blue: #C6BFFF;
+
+
+  --font-heading: "Archivo Black", sans-serif;
+  --font-body: "Space Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #070C26;
+  color: #ffffff;
+  font-family: "Space Mono", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Archivo Black", sans-serif;
+}
+
+.font-heading {
+  font-family: "Archivo Black", sans-serif;
+}
+
+.font-body {
+  font-family: "Space Mono", monospace;
+}
+
+/* Selection */
+::selection {
+  background: #3711BF;
+  color: #fff;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070C26;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3711BF;
+}
+
+/* Orbiting dots animation */
+@keyframes orbit-cw {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes orbit-ccw {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
+}
+
+/* Scroll reveal utility */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.6s ease forwards;
+}
+
+/* Stagger delays */
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
