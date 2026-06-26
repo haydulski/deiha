@@ -21,7 +21,7 @@ const CertIcon = () => (
   </svg>
 )
 
-const formspreeEndpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT
+const formspreeEndpoint = "https://formspree.io/f/mdarewrb"
 
 const contactInfo = [
   { icon: <MailIcon />, label: 'Email', value: 'kontakt@deiha.pl' },
