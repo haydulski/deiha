@@ -1,5 +1,4 @@
 const footerLinks = [
-  { label: 'Polityka prywatności', href: '#' },
   { label: 'LinkedIn', href: 'https://pl.linkedin.com/in/damian-hajdukiewicz-it' },
 ]
 
